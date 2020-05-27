@@ -3,6 +3,7 @@ public class Countingsort {
     private int SizeOfCountArray = 0;
     private int[] SortedArray;
 
+    // This method performs Counting sort and returns the SortedArray
     public int[] CountingSort(int[] Array) {
 
         CountArray(Array);
@@ -10,7 +11,7 @@ public class Countingsort {
 
     }
 
-    // this method creates a CountArray according to the maximum integer in the unsorted Array
+    // This method creates a CountArray according to the maximum integer in the unsorted Array
     private void CountArray(int[] Array) {
         for (int i = 0; i <= Array.length - 1; i++) {
             if (Array[i] > this.SizeOfCountArray) {
